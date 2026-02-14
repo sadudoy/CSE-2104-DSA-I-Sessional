@@ -17,11 +17,9 @@ public:
                 temp = "";
             }
         }
-            if(temp.length() > 0) {
-                vec.push_back(temp);
-            }
-                
-        
+        if(temp.length() > 0) {
+            vec.push_back(temp);
+        }
         
         for(int i=vec.size()-1; i>=0; i--) {
             finalS += vec[i]+" ";
