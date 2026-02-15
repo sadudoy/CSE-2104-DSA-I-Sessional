@@ -6,8 +6,8 @@ int main()
     cin>>a;
     cin>>b;
     for (int i = 0; i < a.length(); i++) {
-        a[i] = tolower(a[i]);
-        b[i] = tolower(b[i]);
+        if(a[i] > 97 && a[i] < 122) a[i] = a[i] - 32;
+        if(b[i] > 97 && b[i] < 122) b[i] = b[i] - 32;
     }
     if(a<b){
         cout<<-1<<endl;

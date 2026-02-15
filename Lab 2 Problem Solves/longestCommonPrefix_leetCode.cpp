@@ -12,7 +12,6 @@ public:
         }
 
         sort(strs.begin(), strs.end());
-        cout<<strs[0]<<" "<<strs[1]<<" "<<strs[2]<<endl;
 
         for(int i = 0; i<lowestSize; i++) {
             if(strs[0][i] == strs[strs.size() - 1][i]) result += strs[0][i];
